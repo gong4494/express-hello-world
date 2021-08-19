@@ -31,6 +31,7 @@ app.use('*', (req,res) => {
       query: req.query,
       headers: req.headers,
       cookies: req.cookies,
+      env: process.env,
     })
     .end()
 })
